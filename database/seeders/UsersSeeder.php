@@ -21,9 +21,9 @@ class UsersSeeder extends Seeder {
         Schema::enableForeignKeyConstraints();
 
         $user = User::create([
-            'email' => 'admin@hydra.project',
-            'password' => Hash::make('hydra'),
-            'name' => 'Hydra Admin',
+            'email' => 'admin@taskpro.com',
+            'password' => Hash::make('45625899'),
+            'name' => 'Admin',
         ]);
         $user->roles()->attach(Role::where('slug', 'admin')->first());
     }
